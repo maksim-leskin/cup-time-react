@@ -1,0 +1,216 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  overflow-y: auto;
+}
+
+.modal {
+  position: relative;
+  max-width: 744px;
+  width: 100%;
+  margin: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f2f9f7;
+  display: flex;
+}
+
+.image {
+  width: 45%;
+  object-fit: cover;
+}
+
+.content {
+  width: 55%;
+  padding: 40px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.header {
+  max-width: 320px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.24;
+  color: #1d1c1d;
+  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.price {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.24;
+  color: #1d1c1d;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.24;
+  color: #b8b8b8;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.24;
+  color: #1d1c1d;
+  text-align: right;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count {
+  display: flex;
+  gap: 4px;
+}
+
+.btn {
+  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
+
+.btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+.number {
+  width: 26px;
+  font-size: 20px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.btnAddCart {
+  border: 1px solid #64099b;
+  border-radius: 4px;
+  padding: 16px 24px;
+  font-size: 20px;
+  line-height: 1.24;
+  color: #64099b;
+  background-color: transparent;
+}
+
+.btnCloseCard {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+@media (max-width: 940px) {
+  .modal {
+    max-width: 524px;
+  }
+
+  .content {
+    padding: 24px 24px 16px;
+    gap: 31px;
+  }
+
+  .header {
+    max-width: 230px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .field {
+    font-size: 12px;
+  }
+
+  .value {
+    font-size: 12px;
+  }
+
+  .count {
+    display: flex;
+    gap: 2px;
+  }
+
+  .btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .number {
+    font-size: 16px;
+  }
+
+  .btnAddCart {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .btnCloseCard {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .overlay {
+    padding: 15px;
+  }
+
+  .modal {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    gap: 17px;
+  }
+}
